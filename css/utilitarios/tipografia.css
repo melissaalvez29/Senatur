@@ -1,0 +1,71 @@
+.txt-n1 {
+    /*   font-size: 4rem;
+    font-family: "Poppins"; */
+    /*    font-weight: 600;
+    line-height: 1.125; */
+    color: #010025;
+    position: relative;
+    font: 600 4rem/1.33 "Poppins", sans-serif;
+}
+
+.txt-n2 {
+    /*  font-size: 2.5rem;
+    font-family: "Poppins";
+    line-height: 1.125;
+    font-weight: 600;
+    color: #010025; */
+    font: 500 2rem/1.12 "Poppins", sans-serif;
+}
+
+.txt-n3 {
+    /*  font-size: 1.5rem;
+    font-family: "Poppins";
+    line-height: 1.3; */
+    font: 500 1.6rem/1.3 "Roboto", sans-serif;
+}
+
+.txt-p1 {
+    /*   font-family: "Roboto";
+    font-size: 1.5rem;
+    line-height: 1.3; */
+    font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+.txt-p3 {
+    /*  font-family: "Roboto";
+    font-size: 0.875;
+    line-height: 1.3; */
+    color: #fff;
+    font: 400 0.875/1.2 "Roboto", sans-serif;
+}
+
+.txt-pn {
+    font: italic normal 400 1.125rem/1.7rem "Roboto", sans-serif;
+}
+
+@media (max-width: 1200px) {
+    .txt-n1 {
+        font-size: 3.4rem;
+    }
+    .txt-p1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .txt-n1 {
+        font-size: 2.2rem;
+    }
+    .txt-n2 {
+        font-size: 1.5rem;
+    }
+    .txt-n3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .txt-p1 {
+        font-size: 1.125rem;
+    }
+}

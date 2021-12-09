@@ -1,0 +1,131 @@
+.contato-bg {
+    background-color: var(--cor-7);
+    padding: 20px 0;
+}
+
+.contato {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contato h1 {
+    margin-bottom: 20px;
+}
+
+.contato p {
+    color: var(--cor-2);
+}
+
+.bl {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.bl p {
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.lb2 {
+    grid-column: 1;
+}
+
+.dados-contato {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.lista-dados {
+    padding-top: 8px;
+}
+
+.lista-dados a {
+    display: inline-block;
+    font-size: 1.25rem;
+    color: var(--cor-1);
+    font-weight: 400;
+    font-family: "Roboto";
+    padding-top: 14px;
+}
+
+.lista-ctt h2,
+.lista-social h2 {
+    text-transform: uppercase;
+}
+
+.lista-rd {
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* Mapa */
+
+.mapa-bg {
+    padding: 120px 20px;
+}
+
+.mapa-foto {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mapa-foto img {
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.foto-info {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    gap: 20px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: #fff;
+}
+
+.foto-info p {
+    padding-top: 20px;
+}
+
+.foto-info img {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+@media (max-width: 900px) {
+    .bl {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .contato-bg {
+        background: none;
+        padding: 60px 0px;
+    }
+    .contato-bg div {
+        display: grid;
+    }
+    .contato div h1,
+    p {
+        justify-self: start;
+    }
+    .formulario-bg {
+        padding: 0;
+    }
+    .dados-contato {
+        padding-top: 30px;
+    }
+    /* .bl {
+        padding: 40px 20px;
+    } */
+}

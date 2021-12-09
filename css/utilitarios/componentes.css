@@ -1,0 +1,25 @@
+.btn {
+    padding: 12px 24px;
+    border-radius: 4px;
+    background-color: var(--cor-5);
+    color: var(--cor-4);
+    font: 500 1.3rem/1rem "Roboto", sans-serif;
+}
+
+@media (max-width: 800px) {
+    .btn {
+        padding: 8px 16px;
+        font-size: 1.2rem;
+    }
+}
+
+.btn-form {
+    border: none;
+    background-color: var(--cor-5);
+    color: #e1e8ff;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 1.125rem;
+    padding: 12px 24px;
+    border-radius: 4px;
+}

@@ -1,0 +1,171 @@
+.curso-info {
+    padding: 120px 0;
+    box-sizing: border-box;
+}
+
+.curso-inf {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.curso-foto img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.curso-conteudo h1::before {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 30px;
+    background: url("/svgs/detalhes/code.svg");
+    position: absolute;
+    top: -50px;
+}
+
+.curso-conteudo h1,
+p {
+    margin-bottom: 32px;
+}
+
+.curso-conteudo p {
+    max-width: 40ch;
+}
+
+.info-bg-curso {
+    background-color: var(--cor-7);
+    padding: 120px 0;
+}
+
+.info-curso {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+
+.info-lista {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+}
+
+.lista-curso {
+    display: flex;
+    gap: 60px;
+}
+
+.info-lista h3,
+.info-tecnologia h3 {
+    color: var(--cor-0);
+}
+
+.info-lista h2,
+.info-tecnologia h2 {
+    text-transform: uppercase;
+    color: var(--cor-1);
+}
+
+.info-tecnologia {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lista-tecnologias {
+    padding-top: 15px;
+    display: flex;
+    align-content: center;
+    gap: 20px;
+}
+
+.lista-tecnologias a {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: var(--cor-8);
+    color: var(--cor-3);
+    font: 600 1.2rem /1rem "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1050px) {
+    .info-curso {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .info-tecnologia {
+        padding: 0;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 800px) {
+    .curso-inf {
+        gap: 20px;
+    }
+    .info-curso {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .curso-inf {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .curso img {
+        width: 400px;
+    }
+    .info-curso {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .info-tecnologia {
+        padding: 0;
+    }
+}
+
+@media (max-width: 510px) {
+    .area-form input {
+        width: 350px;
+    }
+    .area-form textarea {
+        width: 350px;
+    }
+    .formulario p {
+        font-size: 1rem;
+    }
+}
+
+.formulario-bg {
+    padding: 120px 0;
+}
+
+.formulario {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    display: grid;
+    gap: 30px;
+}
+
+.formulario p {
+    font-weight: 400;
+    color: var(--cor-8);
+}
+
+.area-form {
+    display: grid;
+    gap: 32px;
+    justify-items: start;
+}

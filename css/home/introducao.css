@@ -1,0 +1,91 @@
+.introducao-bg {
+    padding: 120px 0;
+}
+
+.introducao {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.foto-conteudo {
+    justify-self: end;
+}
+
+.introducao-conteudo {
+    align-self: center;
+}
+
+.introducao-conteudo h1,
+p {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.introducao-conteudo p {
+    color: var(--cor-1);
+}
+
+.detalhe {
+    color: #888beb;
+}
+
+.introducao-conteudo h1::before {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 30px;
+    background: url("/svgs/detalhes/code.svg");
+    position: absolute;
+    top: -50px;
+}
+
+.introducao-conteudo p {
+    margin-bottom: 32px;
+    max-width: 40ch;
+}
+
+.introducao-conteudo a {
+    font-family: "Poppins";
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: var(--cor-0);
+}
+
+.foto-conteudo img {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    justify-self: end;
+}
+
+@media (max-width: 900px) and (min-width: 800px) {
+    .introducao {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .introducao {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .foto-conteudo {
+        justify-self: start;
+    }
+    .introducao-conteudo h1 {
+        margin-bottom: 16px;
+    }
+    .introducao-conteudo a {
+        font-size: 0.875rem;
+    }
+    .introducao img {
+        width: 400px;
+    }
+}

@@ -1,0 +1,103 @@
+.info-bg {
+    background-color: #010025;
+}
+
+.info {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.lista-data-horario-endereco li {
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.lista-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.bg-header {
+    background-color: #edebeb;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header-menu a {
+    padding: 16px 0px;
+    display: inline-block;
+    font-size: 1.125rem;
+    position: relative;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #010025;
+}
+
+.header-menu a:after {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: #010025;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.header-menu a:hover::after {
+    width: 100%;
+}
+
+
+/* media */
+
+@media (max-width: 800px) {
+    .header-menu {
+        gap: 20px;
+    }
+    .header-menu a {
+        padding: 8px 16px;
+        border-radius: 4px;
+        background-color: #6d71d6;
+    }
+    .header-menu a:hover {
+        background-color: #888beb;
+        border-radius: 4px;
+    }
+    .header-menu a:hover::after {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-menu {
+        gap: 12px;
+    }
+    .header-menu a {
+        padding: 8px 12px;
+        font-size: 0.875rem;
+    }
+}

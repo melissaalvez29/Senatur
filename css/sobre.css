@@ -1,0 +1,129 @@
+.sobre-bg {
+    padding: 120px 0;
+}
+
+.sobre-p {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+
+.sobre-p h1::before {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 30px;
+    background: url("/svgs/detalhes/code.svg");
+    position: absolute;
+    top: -50px;
+}
+
+.sobre-conteudo-p p {
+    max-width: 40ch;
+    color: var(--cor-1);
+    padding-top: 20px;
+}
+
+.sobre-objetivo {
+    padding-top: 40px;
+}
+
+.sobre-objetivo h2 {
+    text-transform: uppercase;
+    color: var(--cor-1);
+}
+
+.sobre-foto-p {
+    align-self: center;
+    justify-self: end;
+}
+
+.sobre-foto-p img {
+    height: 100%;
+}
+
+
+/* Perfil */
+
+.perfil-bg {
+    box-sizing: border-box;
+    padding: 120px 20px;
+}
+
+.perfil {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #ededed;
+    border-radius: 4px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.perfil-foto {
+    justify-self: center;
+    align-self: center;
+}
+
+.perfil-educacao {
+    align-self: center;
+    justify-self: start;
+    display: grid;
+}
+
+.perfil-educacao h2 {
+    color: var(--cor-0);
+}
+
+.perfil-educacao li {
+    padding-top: 20px;
+    font-style: normal;
+    color: var(--cor-2);
+}
+
+.icon-curso {
+    position: relative;
+}
+
+.icon-curso::before {
+    content: " ";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../svgs/sobreSenatur/cursos.svg");
+    position: absolute;
+    left: -30px;
+    top: -1px;
+}
+
+@media (max-width: 850px) {
+    .sobre-bg {
+        padding: 30px 0;
+    }
+    .sobre-p {
+        grid-template-columns: 1fr;
+        padding: 80px 20px;
+    }
+    .perfil {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .sobre-foto-p {
+        justify-self: start;
+    }
+    .perfil-foto {
+        justify-self: start;
+    }
+    .perfil-educacao li {
+        padding-left: 30px;
+    }
+    .perfil-bg {
+        padding: 30px 0;
+    }
+}
